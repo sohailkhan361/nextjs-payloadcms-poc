@@ -6,8 +6,8 @@ export const ContactSubmissions: CollectionConfig = {
   access: {
     create: () => true,
     read: () => true,   // keep true for debugging
-    update: () => false,
-    delete: () => false,
+    update: () => true,
+    delete: () => true,
   },
 
   fields: [

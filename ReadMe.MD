@@ -262,6 +262,5 @@ CMS content automatically resolves based on locale.
 ## Author
 *** Sohail Khan ***
 Software Engineer and Developer
-POC Work
 
 ---
