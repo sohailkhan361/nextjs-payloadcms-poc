@@ -1,6 +1,6 @@
 # Restroworks – Next.js + Payload CMS POC
 
-This repository contains a **CMS-powered, multilingual, SEO-optimized website prototype** built using **Next.js (App Router)** and **Payload CMS**, as part of the Restroworks technical assignment (Round 2).
+This repository contains a **CMS-powered, multilingual, SEO-optimized website prototype** built using **Next.js (App Router)** and **Payload CMS**, as part of a Proof-of-concept.
 
 The project demonstrates:
 
@@ -114,7 +114,7 @@ Fields:
 * `email`
 * `message`
 
-Public **create access enabled**, read restricted to admin.
+Public **create access enabled**, read restricted to admin (optional).
 
 ---
 
