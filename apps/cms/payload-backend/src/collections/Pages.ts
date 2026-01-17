@@ -1,4 +1,3 @@
-
 import { Feature } from "../blocks/Feature";
 import { Testimonial } from "../blocks/Testimonial";
 import { CTA } from "../blocks/CTA";
@@ -7,9 +6,14 @@ import { CollectionConfig } from "payload";
 
 export const Pages: CollectionConfig = {
   slug: "pages",
+  access: {
+    read: () => true,
+  },
+
   admin: {
     useAsTitle: "slug",
   },
+
   fields: [
     {
       name: "slug",

@@ -3,7 +3,13 @@ import FeatureBlock from "./FeatureBlock";
 import TestimonialBlock from "./TestimonialBlock";
 import CTABlock from "./CTABlock";
 
-export default function BlockRenderer({ block }: { block: any }) {
+export default function BlockRenderer({
+  block,
+  lang
+}: {
+  block: any,
+  lang: string,
+}) {
   switch (block.blockType) {
     case "hero":
       return <HeroBlock data={block} />;
@@ -12,7 +18,7 @@ export default function BlockRenderer({ block }: { block: any }) {
     case "testimonial":
       return <TestimonialBlock data={block} />;
     case "cta":
-      return <CTABlock data={block} />;
+      return <CTABlock data={block} lang={lang} />;
     default:
       return null;
   }
