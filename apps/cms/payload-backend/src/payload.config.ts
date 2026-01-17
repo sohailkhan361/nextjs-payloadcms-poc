@@ -7,8 +7,8 @@ import sharp from 'sharp'
 
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
-import { ContactSubmissions } from './blocks/ContactSubmissions'
 import { Pages } from './collections/Pages'
+import { ContactSubmissions } from './collections/ContactSubmissions'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)

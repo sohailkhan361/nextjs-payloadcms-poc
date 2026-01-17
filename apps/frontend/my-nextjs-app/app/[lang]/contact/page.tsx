@@ -1,18 +1,27 @@
 async function submit(formData: FormData) {
   "use server";
 
-  await fetch(
-    `${process.env.NEXT_PUBLIC_PAYLOAD_URL}/api/contact-submissions`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: formData.get("name"),
-        email: formData.get("email"),
-        message: formData.get("message"),
-      }),
-    }
-  );
+  if (!process.env.PAYLOAD_URL) {
+    throw new Error("PAYLOAD_URL is not defined");
+  }
+
+  const payload = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
+
+  console.log("Contact Submissions:", payload);
+
+  const res = await fetch(`${process.env.PAYLOAD_URL}/api/contact-submissions`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  const text = await res.text();
+  console.log("Payload response:", res.status, text);
+
 }
 
 export default async function ContactPage({

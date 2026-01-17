@@ -36,6 +36,7 @@ The project demonstrates:
 ---
 
 ## Project Structure
+>tree -I "node_modules|.next|.git" -L 4
 
 ```bash
 .
