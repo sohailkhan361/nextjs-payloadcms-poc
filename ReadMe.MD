@@ -310,8 +310,7 @@ CMS content automatically resolves based on locale.
 
 --------------------
 
-## Author
-## Sohail Khan
+## Author: Sohail Khan
 Software Engineer and Developer
 
 ---
