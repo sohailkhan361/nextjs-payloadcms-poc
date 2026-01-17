@@ -257,6 +257,57 @@ Language switching is done via URL:
 
 CMS content automatically resolves based on locale.
 
+-------------------
+## 📸 Screenshots
+
+### 🌐 Frontend – Homepage
+
+**Homepage (English)**  
+![Homepage EN](./screenshots/homepage-en.png)
+
+**Homepage (French)**  
+![Homepage FR](./screenshots/homepage-fr.png)
+
+---
+
+### ✉️ Frontend – Contact Page
+
+**Contact Form (English)**  
+![Contact Form EN](./screenshots/contact-form-en.png)
+
+**Contact Form (French)**  
+![Contact Form FR](./screenshots/contact-form-fr.png)
+
+**Contact Submission – Success State**  
+![Contact Success](./screenshots/contact-success.png)
+
+---
+
+### 🧠 Payload CMS – Admin Panel
+
+**Admin Dashboard**  
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+
+**Pages Collection**  
+![Admin Pages](./screenshots/admin-pages.png)
+
+**Homepage Editor (Block-based CMS Layout)**  
+![Admin CMS Homepage](./screenshots/admin-cms-home-page.png)
+
+---
+
+### 📥 Payload CMS – Contact Submissions
+
+**Stored Contact Submissions in CMS**  
+![Admin Contact Submissions](./screenshots/admin-contact-submissions.png)
+
+---
+
+### 🔌 API Verification
+
+**Direct API Submission Proof**  
+![API Payload Submissions](./screenshots/api-payload-submissions.png)
+
 --------------------
 
 ## Author
