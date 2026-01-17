@@ -5,16 +5,37 @@ export default async function ContactPage({
 }) {
   const { lang } = await params;
 
+  const labels = {
+    en: {
+      heading: "Contact Us",
+      name: "Name",
+      message: "Message",
+      submit: "Submit",
+    },
+    hi: {
+      heading: "संपर्क करें",
+      name: "नाम",
+      message: "संदेश",
+      submit: "भेजें",
+    },
+    fr: {
+      heading: "Contactez-nous",
+      name: "Nom",
+      message: "Message",
+      submit: "Envoyer",
+    },
+  };
+
+  const t = labels[lang as keyof typeof labels] ?? labels.en;
+
   return (
     <section className="p-8 max-w-xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">
-        {lang === "hi" ? "संपर्क करें" : "Contact Us"}
-      </h1>
+      <h1 className="text-3xl font-bold mb-6">{t.heading}</h1>
 
       <form className="flex flex-col gap-4">
         <input
           type="text"
-          placeholder={lang === "hi" ? "नाम" : "Name"}
+          placeholder={t.name}
           className="border p-2 rounded"
           required
         />
@@ -25,12 +46,12 @@ export default async function ContactPage({
           required
         />
         <textarea
-          placeholder={lang === "hi" ? "संदेश" : "Message"}
+          placeholder={t.message}
           className="border p-2 rounded"
           rows={4}
         />
         <button className="bg-black text-white py-2 rounded">
-          {lang === "hi" ? "भेजें" : "Submit"}
+          {t.submit}
         </button>
       </form>
     </section>

@@ -14,6 +14,7 @@ export default function Navbar({ lang }: { lang: string }) {
         {/* Language Switcher (Stripe-like) */}
         <Link href="/en" className="text-sm">EN</Link>
         <Link href="/hi" className="text-sm">हिंदी</Link>
+        <Link href="/fr">FR</Link>
       </div>
     </nav>
   );
