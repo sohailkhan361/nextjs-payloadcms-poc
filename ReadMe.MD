@@ -311,7 +311,7 @@ CMS content automatically resolves based on locale.
 --------------------
 
 ## Author
-*** Sohail Khan ***
+## Sohail Khan
 Software Engineer and Developer
 
 ---
